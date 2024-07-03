@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+  padding: 0%;
+  margin: 0%;
+  background: linear-gradient(45deg, #2f3640, #500ae4);
+ width: 100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 350px;
+  padding: 20px;
+  background: linear-gradient(45deg, #2f3640, #500ae4);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 2px solid white;
+}
+.search-icon img{
+  width: 30px;
+  height: 30px;
+}
+.search-icon{
+  padding: 10px;
+  cursor: pointer;
+  height: 30px;
+}
+.input-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.input-container input{
+  background: transparent;
+  color: white;
+}
+.cityInput::placeholder {
+  color: rgba(255, 255, 255, 0.641); 
+}
+.cityInput{
+  flex: 1;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  height: 30px;
+  padding: 10px;
+}
+.image img{
+  height: 150px;
+  width: 150px;
+}
+.image{
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.temp,
+.location,
+.country {
+  margin-top: 5px;
+  font-size: 35px;
+  color:white ;
+  text-transform: uppercase;
+  text-align: center;
+}
+.temp{
+  font-weight: 500;
+}
+.location{
+  font-size: 40px;
+  font-weight: 400;
+  color: rgb(228, 206, 13);
+}
+.country{
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.799);
+}
+.cord{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  text-align: center;
+  gap: 10px;
+}
+.cord div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.cord div span{
+  font-size: 14px;
+}
+.humidity-percent,
+.wind-percent,
+.cord div span:nth-child(2){
+  font-size: 18px;
+  font-weight: bold;
+  color:rgb(211, 222, 59);
+  padding: 5px;
+}
+.lat, .log{
+  color: white;
+}
+.icon {
+  height: 50px;
+  width: 50px;
+}
+.data-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.element{
+  text-align: center;
+}
+.text{
+  font-size: 12px;
+  color: white;
+}
+.copyright{
+  font-size: 12px;
+  text-align: center;
+  color: whitesmoke;
+}
+.copyright span{
+  color:pink;
+}
+.city-not-found,
+.loading-message,
+.error-message{
+  margin-top: 10px;
+  color: rgb(236, 236, 93);
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+@media (max-width: 750px) {
+  
+  .image img {
+    height: 140px; /* Smaller image size for better fit on smaller screens */
+    width: 140px;
+  }
+
+  .temp,
+  .location,
+  .country {
+    font-size: 30px; /* Smaller font size for location details */
+  }
+
+  .cord div span {
+    font-size: 13px; /* Smaller font size for coordinates */
+  }
+
+  .humidity-percent,
+  .wind-percent,
+  .cord div span:nth-child(2) {
+    font-size: 15px; /* Smaller font size for humidity and wind speed */
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    width: 300px; /* Adjusted width for smaller screens */
+    
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    width: 280px; /* Adjusted width for smaller screens */
+      }
+
+  .image img {
+    height: 120px; /* Smaller image size for better fit on smaller screens */
+    width: 120px;
+  }
+
+  .temp,
+  .location,
+  .country {
+    font-size: 28px; /* Smaller font size for location details */
+  }
+
+  .cord div span {
+    font-size: 12px; /* Smaller font size for coordinates */
+  }
+
+  .humidity-percent,
+  .wind-percent,
+  .cord div span:nth-child(2) {
+    font-size: 14px; /* Smaller font size for humidity and wind speed */
+  }
+  
+}
+@media (max-width: 400px) {
+  .container {
+    width: 250px; /* Adjusted width for smaller screens */
+      }
+
+  .image img {
+    height: 110px; /* Smaller image size for better fit on smaller screens */
+    width: 110px;
+  }
+
+  .temp,
+  .location,
+  .country {
+    font-size: 26px; /* Smaller font size for location details */
+  }
+
+  .cord div span {
+    font-size: 12px; /* Smaller font size for coordinates */
+  }
+
+  .humidity-percent,
+  .wind-percent,
+  .cord div span:nth-child(2) {
+    font-size: 14px; /* Smaller font size for humidity and wind speed */
+  }
+  .input-container input{
+    width: 130px;
+  }
+}
+@media (max-width: 350px) {
+  .container {
+    width: 230px; /* Adjusted width for smaller screens */
+      }
+    }
